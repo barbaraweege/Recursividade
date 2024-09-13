@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int fatorial(int valor){
+    
+    if (valor==0){
+        return 1;
+    } else{
+        return valor * fatorial(valor -1);
+    }
+}
+
+int main()
+{
+    int valor;
+    
+    printf("digite um numero");
+    scanf("%d", &valor);
+    
+    printf("%d", fatorial(valor));
+    return 0;
+}
