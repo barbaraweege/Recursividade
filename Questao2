@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+double calculo(double N){
+    
+    if (N==1){ //valor de parada 1
+        return 1;
+    } else{
+        return calculo(N-1.0) + (1.0/N);
+    }
+}
+
+int main()
+{
+    float N;
+    
+    printf("digite um numero");
+    scanf("%f", &N);
+    
+    printf("%f", calculo(N));
+    return 0;
+}
