@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int elevar(int N, int X){
+    if (N==0){
+        return 1;
+    }else{
+        return X * elevar(N-1, X);
+    }
+    
+}
+
+int main()
+{
+    int N;
+    int X;
+    
+    printf("Digite a base: ");
+    scanf("%d", &X);
+    
+    printf("Digite o expoente: ");
+    scanf("%d", &N);
+    
+    printf("%d", elevar(N, X));
+
+    return 0;
+}
