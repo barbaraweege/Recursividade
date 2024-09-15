@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int somar(int N){
+    if (N==0){
+        return 0;
+    }else{
+        return N + somar(N-1);
+    }
+    
+}
+
+int main()
+{
+    int N;
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &N);
+    
+    printf("%d", somar(N));
+
+    return 0;
+}
